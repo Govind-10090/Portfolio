@@ -10,6 +10,7 @@ export interface Project {
   techStack: string[];
   challenges: string;
   image: string;
+  video?: string;
   liveUrl: string;
   githubUrl: string;
 }
@@ -32,28 +33,31 @@ export const PROJECTS: Project[] = [
     ],
     techStack: ['React', 'Movie API', 'Tailwind CSS', 'Vercel'],
     challenges: 'One of the main challenges was handling the asynchronous nature of API calls while maintaining a smooth user experience. I implemented loading states and error handling to ensure the UI remains responsive even during network delays.',
-    image: 'https://drive.google.com/file/d/1m5i0fK6SFpjHxKXMPkgYdgkb-N7SyL-a/view?usp=drive_link',
+    image: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=2050&auto=format&fit=crop',
+    video: 'https://vjs.zencdn.net/v/oceans.mp4', // Placeholder video for CineQuest
     liveUrl: '#',
     githubUrl: '#'
   },
   {
-    id: 'task-manager',
-    title: 'Task Manager',
-    description: 'A modern productivity dashboard for managing daily tasks with priority tags and status tracking.',
-    longDescription: 'Task Manager is a streamlined productivity tool designed to help individuals and teams organize their daily workflows. It focuses on simplicity and efficiency, allowing users to manage tasks with minimal friction.',
-    problem: 'Many task management tools are over-engineered with features that distract from the core goal: getting things done. Users need a simple, intuitive way to track tasks without a steep learning curve.',
-    solution: 'This application provides a minimalist dashboard where tasks can be created, categorized, and tracked with ease. It uses priority labels and status tracking to help users focus on what matters most.',
-    architecture: 'The app is built using React and the Context API for global state management. This ensures that task data is consistent across the application without complex prop drilling. Local storage is used for data persistence.',
+    id: 'support-desk',
+    title: 'SupportDesk',
+    description: 'An enterprise-grade helpdesk system with real-time ticket tracking, knowledge base, and admin analytics.',
+    longDescription: 'SupportDesk is a comprehensive support management system designed for high-velocity engineering teams. It streamlines the entire support lifecycle, from ticket creation and automated prioritization to resolution tracking and system-wide analytics.',
+    problem: 'Internal support requests often get lost in fragmented communication channels, leading to slow resolution times and lack of visibility into recurring system issues.',
+    solution: 'SupportDesk centralizes all support activities into a unified dashboard. It features a robust ticketing system, an integrated knowledge base for self-service, and advanced debugging tools for engineers, all powered by a real-time data layer.',
+    architecture: 'The application follows a modular micro-frontend architecture. The core is built with React and TypeScript, utilizing a real-time database for live ticket updates and a custom analytics engine for the admin console.',
     keyFeatures: [
-      'Task creation and editing',
-      'Priority labeling (High, Medium, Low)',
-      'Status tracking (To Do, In Progress, Done)',
-      'Local storage persistence',
-      'Clean, distraction-free UI'
+      'Real-time ticket status tracking',
+      'Integrated Knowledge Base',
+      'Advanced API Debugger & Log Analyzer',
+      'Admin Console with data visualization',
+      'Role-based access control (Admin/Agent/User)',
+      'Automated priority management'
     ],
-    techStack: ['React', 'Context API', 'Tailwind CSS'],
-    challenges: 'Implementing efficient state updates for a list of tasks was a key focus. I optimized the rendering process to ensure that adding or editing a task feels instantaneous.',
-    image: 'https://picsum.photos/seed/taskmanager/800/600',
+    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Chart.js', 'Firebase'],
+    challenges: 'Designing a system that balances information density for power users with intuitive navigation for casual users was a significant challenge. I implemented a multi-layered dashboard approach that surfaces critical data while keeping advanced tools just a click away.',
+    image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop',
+    video: 'https://vjs.zencdn.net/v/oceans.mp4', // Placeholder for the shared video
     liveUrl: '#',
     githubUrl: '#'
   }

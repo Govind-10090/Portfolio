@@ -46,14 +46,27 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       {/* Project Visual */}
       <div className="lg:col-span-8 relative">
         <div className="aspect-[16/9] overflow-hidden bg-secondary border border-white/5 relative rounded-sm">
-          <motion.img
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
-            referrerPolicy="no-referrer"
-          />
+          {project.video ? (
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
+            >
+              <source src={project.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <motion.img
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+              src={project.image}
+              alt={project.title}
+              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000"
+              referrerPolicy="no-referrer"
+            />
+          )}
           <div className="absolute inset-0 bg-primary/20 mix-blend-multiply group-hover:opacity-0 transition-opacity duration-1000" />
           
           {/* Overlay Info */}

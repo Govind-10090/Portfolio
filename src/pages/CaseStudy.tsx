@@ -82,12 +82,25 @@ export default function CaseStudy() {
           transition={{ delay: 0.2, duration: 1 }}
           className="aspect-[21/9] overflow-hidden mb-32 relative grid-lines border border-white/5"
         >
-          <img
-            src={project.image}
-            alt={project.title}
-            className="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-1000"
-            referrerPolicy="no-referrer"
-          />
+          {project.video ? (
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-1000"
+            >
+              <source src={project.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-full object-cover grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-1000"
+              referrerPolicy="no-referrer"
+            />
+          )}
         </motion.div>
 
         {/* Content Grid */}

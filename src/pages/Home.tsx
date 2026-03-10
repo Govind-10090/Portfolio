@@ -66,8 +66,8 @@ export default function Home() {
             <div className="md:col-span-3">
               <h4 className="text-[10px] font-bold uppercase tracking-[0.3em] text-white mb-8">Connect</h4>
               <div className="flex flex-col gap-6">
-                <a href="#" className="text-sm text-slate-500 hover:text-accent transition-colors">LinkedIn</a>
-                <a href="#" className="text-sm text-slate-500 hover:text-accent transition-colors">GitHub</a>
+                <a href="https://www.linkedin.com/in/govind-burhan-a66aba241/" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 hover:text-accent transition-colors">LinkedIn</a>
+                <a href="https://github.com/Govind-10090" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-500 hover:text-accent transition-colors">GitHub</a>
                 <a href="#" className="text-sm text-slate-500 hover:text-accent transition-colors">Twitter</a>
               </div>
             </div>

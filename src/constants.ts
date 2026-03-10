@@ -32,7 +32,7 @@ export const PROJECTS: Project[] = [
     ],
     techStack: ['React', 'Movie API', 'Tailwind CSS', 'Vercel'],
     challenges: 'One of the main challenges was handling the asynchronous nature of API calls while maintaining a smooth user experience. I implemented loading states and error handling to ensure the UI remains responsive even during network delays.',
-    image: 'https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=2050&auto=format&fit=crop',
+    image: 'https://drive.google.com/file/d/1m5i0fK6SFpjHxKXMPkgYdgkb-N7SyL-a/view?usp=drive_link',
     liveUrl: '#',
     githubUrl: '#'
   },

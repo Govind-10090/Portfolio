@@ -105,7 +105,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               whileInView={{ opacity: 1, y: 0 }}
               className="glass p-8 rounded-sm max-w-md border-white/10"
             >
-              <p className="text-slate-300 text-sm leading-relaxed font-light">
+              <p className={project.id === 'support-desk' ? 'text-black text-sm leading-relaxed font-light' : 'text-slate-300 text-sm leading-relaxed font-light'}>
                 {project.description}
               </p>
             </motion.div>

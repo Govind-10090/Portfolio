@@ -55,6 +55,7 @@ export default function CaseStudy() {
               </p>
             </div>
             <div className="lg:col-span-4 flex flex-col gap-6 lg:items-end">
+              {project.id !== 'support-desk' && (
               <a
                 href={project.liveUrl}
                 target="_blank"
@@ -63,6 +64,7 @@ export default function CaseStudy() {
               >
                 Live Deployment
               </a>
+            )}
               <a
                 href={project.githubUrl}
                 target="_blank"

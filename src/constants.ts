@@ -60,8 +60,7 @@ export const PROJECTS: Project[] = [
     challenges: 'Designing a system that balances information density for power users with intuitive navigation was a significant challenge.',
     image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop',
     video: supportdeskVideo,
-    liveUrl: '#',
-    githubUrl: '#'
+    githubUrl: 'https://github.com/Govind-10090'
   }
 ];
 

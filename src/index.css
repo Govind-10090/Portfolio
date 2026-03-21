@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0A0A0A;
+  --color-primary: #111111;
   --color-secondary: #141414;
   --color-accent: #E63946; /* International Red - bold and classic */
   --color-accent-secondary: #457B9D;

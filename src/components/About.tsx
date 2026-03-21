@@ -4,8 +4,8 @@ import { motion } from 'motion/react';
 export default function About() {
   const heading = "The Craft of Invisible Design";
   const bodyParagraphs = [
-    "Design is not a coat of paint; it is the skeleton. I am developing a philosophy that prioritizes clarity over decoration and purpose over trend.",
-    "My approach is rooted in the Swiss International Style—objective, functional, and mathematically sound. I believe that the best interface is the one that disappears, leaving only the user and their intent."
+    "Design transcends mere aesthetics; it forms the very foundation of user experience. Our philosophy centers on clarity amidst complexity, functionality over fleeting trends, and solutions that endure.",
+    "Embracing the principles of Swiss International Style—objective, functional, and mathematically precise—we strive for interfaces that vanish into the background, enabling pure user intent."
   ];
 
   return (
